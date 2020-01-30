@@ -15,7 +15,7 @@ const createGoogleMap = () => {
       lng: -87.7265665
     },
     zoom: 13.84,
-    disableDefaultUI: true
+    disableDefaultUI: false
   });
   onMapLoad(map, locations);
 };
@@ -30,7 +30,7 @@ const onMapLoad = (map, locations) => {
   });
 
   new MarkerClusterer(map, markers, {
-    maxZoom: 13,
+    maxZoom: 14,
     imagePath:
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
   });
